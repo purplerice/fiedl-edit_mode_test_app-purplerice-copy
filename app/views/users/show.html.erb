@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<span class="edit_mode_group">
+  <a class="edit_button" href="#">edit mode</a>
+  <a class="save_button" href="#">save</a>
+  <a class="cancel_button" href="#">cancel</a>
+
+  <p>
+    <b>Name:</b>
+    <%= best_in_place @user, :name %>
+  </p>
+</span>
+
+<%= link_to 'Edit', edit_user_path(@user) %> |
+<%= link_to 'Back', users_path %>
